@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>My Angular App!</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="/javascripts/angularApp.js"></script>
+  </head>
+  <body ng-app="seamlessmd" ng-controller="MainCtrl">
+    <div>
+      <p>Name of patient: {{name}}</p>
+      <p>Organization name: {{orgName}}</p>
+      <p>Gender: {{gender}}</p>
+      <p>Number of conditions they have: ((numCond))</p>
+      <p>List of all conditions:</p>
+      <ul>
+        <li ng-repeat="condition in conditions">{{condition}}</li>
+      </ul>
+    </div>
+  </body>
+</html>

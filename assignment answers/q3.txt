@@ -1,0 +1,9 @@
+Given a basic scheduling software system for patient appointments that sends out emails 24 hours before the scheduled time to the patient email as a reminder. Describe some tests you would write to ensure things were working and scenarios that you might attempt to break the system.
+
+- Test the function that generates the email content to make sure that the proper content is generated
+- stub the function that sends out the email, then use a test framework that lets you manipulate the system time to see if the function is called 24 hours before
+- stub the return of the function that sends out the email to test how it responds to success/failure
+
+edge cases:
+- daylight savings time?
+- store everything in utctime to avoid dealing with timezones
